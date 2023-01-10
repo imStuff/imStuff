@@ -128,11 +128,19 @@ public class Main {
                 cs.beginText();
                 cs.newLineAtOffset(initX+2, initY-cellHeight+2);
                 cs.setFont(PDType1Font.TIMES_ROMAN, 12);
-                cs.showText("bruh");
+                cs.showText("12-06-2004");
                 cs.endText();
 
-                initX+=cellWidth;
+
+
+
             }
+            cs.beginText();
+            cs.newLineAtOffset(initX+2+cellWidth, initY-cellHeight+2);
+            cs.setFont(PDType1Font.TIMES_ROMAN, 12);
+            cs.showText("12-06-2005");
+            cs.endText();
+
             initX = 100;
             initY -= cellHeight;
         }
