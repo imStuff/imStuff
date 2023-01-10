@@ -263,6 +263,37 @@ public class Main {
         cs3.endText();
 
 
+
+
+
+
+
+
+
+
+        int totalAmmount = 1;
+        for (int a=0; a<=hmerominies; a++); {
+            //total = totalAmmount + arrayValue[a]
+        }
+
+        double average = (double)totalAmmount/hmerominies;
+
+
+        cs3.beginText();
+        cs3.setFont(PDType1Font.TIMES_ROMAN, 18);
+        cs3.setNonStrokingColor(0,0, 0);
+        cs3.newLineAtOffset(100, 620);
+        cs3.showText("Average Earnings:" + totalAmmount + "$");
+        cs3.endText();
+
+        cs3.beginText();
+        cs3.setFont(PDType1Font.TIMES_ROMAN, 18);
+        cs3.setNonStrokingColor(0,0, 0);
+        cs3.newLineAtOffset(100, 638);
+        cs3.showText("Total Earnings:" + totalAmmount + "$");
+        cs3.endText();
+
+
         cs3.close();
 
 
