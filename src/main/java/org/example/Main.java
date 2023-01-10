@@ -125,16 +125,20 @@ public class Main {
             for(int j=1; j<=colCount; j++) {
                 cs.addRect(initX, initY, cellWidth, -cellHeight);
 
-                cs.beginText();
-                cs.newLineAtOffset(initX+2, initY-cellHeight+2);
-                cs.setFont(PDType1Font.TIMES_ROMAN, 12);
-                cs.showText("12-06-2004");
-                cs.endText();
+
 
 
 
 
             }
+
+            cs.beginText();
+            cs.newLineAtOffset(initX+2, initY-cellHeight+2);
+            cs.setFont(PDType1Font.TIMES_ROMAN, 12);
+            cs.showText("12-06-2004");
+            cs.endText();
+
+
             cs.beginText();
             cs.newLineAtOffset(initX+2+cellWidth, initY-cellHeight+2);
             cs.setFont(PDType1Font.TIMES_ROMAN, 12);
@@ -194,21 +198,32 @@ public class Main {
                 for(int j=1; j<=colCount2; j++) {
                     cs2.addRect(initX2, initY2, cellWidth2, -cellHeight2);
 
-                    cs2.beginText();
-                    cs2.newLineAtOffset(initX2+2, initY2-cellHeight2+2);
-                    cs2.setFont(PDType1Font.TIMES_ROMAN, 12);
-                    cs2.showText("" + counter);
-                    cs2.endText();
 
-                    initX2+=cellWidth2;
+
+
 
                     System.out.println(counter);
-                    counter++;
+
                 }
+
+
+                cs2.beginText();
+                cs2.newLineAtOffset(initX2+2, initY2-cellHeight2+2);
+                cs2.setFont(PDType1Font.TIMES_ROMAN, 12);
+                cs2.showText("" + counter);
+                cs2.endText();
+
+                cs2.beginText();
+                cs2.newLineAtOffset(initX2+2+cellWidth2, initY2-cellHeight2+2);
+                cs2.setFont(PDType1Font.TIMES_ROMAN, 12);
+                cs2.showText("yah");
+                cs2.endText();
+
+
                 initX2 = 100;
                 initY2 -= cellHeight2;
 
-
+                counter++;
             }
 
 
